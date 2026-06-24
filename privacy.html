@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SharkTrackr</title>
+  <meta name="description" content="SharkTrackr Privacy Policy. SharkTrackr does not collect, store, or transmit any personal data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:        #34C759;
+      --green-dark:   #248A3D;
+      --green-light:  #E8F8ED;
+      --navy:         #0D1B2A;
+      --slate:        #2C3E50;
+      --mid:          #5A6A7A;
+      --light:        #F4F6F8;
+      --border:       #DDE3EA;
+      --white:        #FFFFFF;
+      --radius:       14px;
+      --radius-lg:    24px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--slate);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .nav-logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      overflow: hidden;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .nav-logo span { color: var(--green); }
+    .nav-cta {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 22px;
+      border-radius: 50px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+    /* HERO */
+    .hero {
+      background: var(--navy);
+      padding: 72px 24px 64px;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(52,199,89,0.15);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.55);
+      font-size: 16px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    .summary-box {
+      background: var(--green-light);
+      border: 1.5px solid rgba(52,199,89,0.3);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .summary-box p {
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    .summary-box strong { color: var(--green-dark); }
+
+    .section {
+      margin-bottom: 44px;
+    }
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid var(--border);
+    }
+    .section p {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 8px;
+    }
+    .section ul li {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.75;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+    .section ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: var(--mid);
+      margin-bottom: 48px;
+    }
+
+    .contact-box {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+    .contact-box p {
+      font-size: 15px;
+      color: var(--mid);
+      margin-bottom: 8px;
+    }
+    .contact-box a {
+      color: var(--green-dark);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .footer-logo span { color: var(--green); }
+    .footer-tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 20px;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--green); }
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    @media (max-width: 600px) {
+      .nav-cta { font-size: 13px; padding: 8px 16px; }
+      .content { padding: 40px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><img src="SharkTrackrLogo.png" alt="SharkTrackr logo" /></div>
+        Shark<span>Trackr</span>
+      </a>
+      <a href="index.html#download" class="nav-cta">Download Free</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-tag">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>SharkTrackr is built with your privacy as the default. No accounts. No servers. No data collection.</p>
+  </div>
+
+  <div class="content">
+
+    <p class="effective-date">Effective date: 29 May 2026 &nbsp;·&nbsp; Last updated: 29 May 2026</p>
+
+    <div class="summary-box">
+      <p><strong>The short version:</strong> SharkTrackr does not collect, transmit, or share any personal information. All data you enter — sessions, bankroll, settings — is stored exclusively on your device. We have no servers. We receive nothing.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>SharkTrackr collects no personal information whatsoever. Specifically, we do not collect:</p>
+      <ul>
+        <li>Names, email addresses, or account credentials</li>
+        <li>Financial data or payment information</li>
+        <li>Location data</li>
+        <li>Device identifiers or advertising IDs</li>
+        <li>Usage analytics or behavioural data</li>
+        <li>Crash reports or diagnostic data sent to us</li>
+        <li>Any data through third-party SDKs, as none are used</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. How Your Data Is Stored</h2>
+      <p>All data you enter into SharkTrackr — poker sessions, bankroll figures, venues, game variants, settings, and preferences — is stored locally on your device using Apple's SwiftData framework.</p>
+      <p>This data never leaves your device unless you explicitly use the in-app Backup feature to export a file, which you control entirely. No data is transmitted to any server operated by us or any third party.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Third-Party Services</h2>
+      <p>SharkTrackr uses no third-party SDKs, analytics frameworks, advertising networks, or cloud services. The app makes no outbound network connections during normal use.</p>
+      <p>The App Store distribution of SharkTrackr is subject to Apple's own privacy practices. Please refer to <a href="https://www.apple.com/legal/privacy/" style="color:var(--green-dark);font-weight:600;">Apple's Privacy Policy</a> for information on how Apple handles data related to app downloads and purchases.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Apple Watch</h2>
+      <p>If you use the SharkTrackr Apple Watch companion app, session and venue data is shared between your iPhone and Apple Watch over Apple's WatchConnectivity framework. This data transfer occurs only between your own devices and is not accessible to us.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Backup and Restore</h2>
+      <p>SharkTrackr includes an optional Backup feature that exports your data as a file to your device. This file is under your full control. You may store it in iCloud Drive, AirDrop it, or delete it — we have no access to it at any point.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Children's Privacy</h2>
+      <p>SharkTrackr does not knowingly collect any information from anyone, including children under the age of 13. As no data is collected from any user, there is no distinct risk to children's privacy.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Changes to This Policy</h2>
+      <p>If we ever update this policy — for example, if a future version of SharkTrackr introduces optional features that involve data collection — we will update the effective date above and, where appropriate, notify users within the app. We will never introduce data collection silently.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Contact</h2>
+      <p>If you have any questions about this privacy policy or SharkTrackr's data practices, please get in touch:</p>
+      <div class="contact-box">
+        <p>Email: <a href="mailto:support@sharktrackr.app">support@sharktrackr.app</a></p>
+        <p style="margin-top:4px;font-size:13px;">We aim to respond within 48 hours.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Shark<span>Trackr</span></div>
+      <div class="footer-tagline">Track Every Hand. Own Your Game.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="mailto:support@sharktrackr.app">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 SharkTrackr. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
